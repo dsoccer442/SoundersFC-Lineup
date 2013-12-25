@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+#field {
+    height: 660px;
+    position: absolute;
+    width: 660px;
+    left: 570px;
+    top: 10px;
+}
+
+td {
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+.player {
+    width: 90px;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #11568C;
+    visibility: hidden;
+}
+
+.goalie > img {
+    top: 520px;
+    left: 852px;
+}
+
+.right-back > img {
+    top: 400px;
+    left: 1062px;
+}
+
+.center-back-1 > img {
+    top: 400px;
+    left: 772px;
+}
+.center-back-2 > img {
+    top: 400px;
+    left: 932px;
+}
+.left-back > img {
+    top: 400px;
+    left: 642px;
+}
+
+.right-midfield > img {
+    top: 250px;
+    left: 1062px;
+}
+
+.central-midfield-1 > img {
+    top: 250px;
+    left: 772px;
+}
+.central-midfield-2 > img {
+    top: 250px;
+    left: 932px;
+}
+
+.left-midfield > img {
+    top: 250px;
+    left: 642px;
+}
+.forward-1 > img {
+    top: 110px;
+    left: 752px;
+}
+.forward-2 > img {
+    top: 110px;
+    left: 942px;
+}

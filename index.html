@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Sounders FC Lineup</title>
+	<link rel="stylesheet" type="text/css" href="sounders.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="player-sel">
+        <h1>Who should be in the Sounders FC <br> Starting Lineup?</h1>
+        <form id="sounders-form" target="_self" onsubmit="javascript: success()" action="javascript: postInfoToGoogle()" method="POST">
+            <table>
+                <td>
+                    <label>Goalie<br></label>
+                    <input type="radio" name="goalie" value="Josh Ford" id="josh-btn">Josh Ford<br>
+                    <input type="radio" name="goalie" value="Stefan Frei" id="stefan-btn">Stefan Frei<br>
+                    <input type="radio" name="goalie" value="Marcus Hahnemann" id="marcus-btn">Marcus Hahnemann<br><br>
+                    <label>Left Back<br></label>
+                    <input type="radio" name="left-back" value="Leo Gonzalez" id="leo-btn">Leo Gonzalez<br>
+                    <input type="radio" name="left-back" value="Dylan Remick" id="dylan-lb-btn">Dylan Remick<br><br>
+                    <label>Center Back 1<br></label>
+                    <input type="radio" name="center-back-1" value="Jhon Kennedy Hurtado" id="jhon-1-btn">Jhon Kennedy Hurtado<br>
+                    <input type="radio" name="center-back-1" value="Patrick Ianni" id="patrick-1-btn">Patrick Ianni<br>
+                    <input type="radio" name="center-back-1" value="Chad Marshall" id="chad-1-btn">Chad Marshall<br>
+                    <input type="radio" name="center-back-1" value="Zach Scott" id="zach-cb-1-btn">Zach Scott<br>
+                    <input type="radio" name="center-back-1" value="Djimi Traore" id="djimi-1-btn">Djimi Traore<br><br>
+                    <label>Center Back 2<br></label>
+                    <input type="radio" name="center-back-2" value="Jhon Kennedy Hurtado" id="jhon-2-btn">Jhon Kennedy Hurtado<br>
+                    <input type="radio" name="center-back-2" value="Patrick Ianni" id="patrick-2-btn">Patrick Ianni<br>
+                    <input type="radio" name="center-back-2" value="Chad Marshall" id="chad-2-btn">Chad Marshall<br>
+                    <input type="radio" name="center-back-2" value="Zach Scott" id="zach-cb-2-btn">Zach Scott<br>
+                    <input type="radio" name="center-back-2" value="Djimi Traore" id="djimi-2-btn">Djimi Traore<br><br>
+                    <label>Right Back<br></label>
+                    <input type="radio" name="right-back" value="DeAndre Yedlin" id="deandre-btn">DeAndre Yedlin<br>
+                    <input type="radio" name="right-back" value="Zach Scott" id="zach-rb-btn">Zach Scott<br>
+                    <input type="radio" name="right-back" value="Dylan Remick" id="dylan-rb-btn">Dylan Remick<br><br>
+                </td>
+                <td>
+                    <label>Right Midfielder<br></label>
+                    <input type="radio" name="right-mid" value="Clint Dempsey" id="clint-rm-btn">Clint Dempsey<br>
+                    <input type="radio" name="right-mid" value="Brad Evans" id="brad-rm-btn">Brad Evans<br>
+                    <input type="radio" name="right-mid" value="David Estrada" id="david-rm-btn">David Estrada<br>
+                    <input type="radio" name="right-mid" value="Lamar Neagle" id="lamar-rm-btn">Lamar Neagle<br><br>
+                    <label>Center Midfielder 1<br></label>
+                    <input type="radio" name="center-mid-1" value="Osvaldo Alonso" id="osvaldo-1-btn">Osvaldo Alonso<br>
+                    <input type="radio" name="center-mid-1" value="Brad Evans" id="brad-cm-1-btn">Brad Evans<br>    
+                    <input type="radio" name="center-mid-1" value="Blair Gavin" id="blair-1-btn">Blair Gavin<br>
+                    <input type="radio" name="center-mid-1" value="Shalrie Joseph" id="shalrie-1-btn">Shalrie Joseph<br>
+                    <input type="radio" name="center-mid-1" value="Andy Rose" id="andy-1-btn">Andy Rose<br>
+                    <input type="radio" name="center-mid-1" value="Clint Dempsey" id="clint-cm-1-btn">Clint Dempsey<br><br>
+                    <label>Center Midfielder 2<br></label>
+                    <input type="radio" name="center-mid-2" value="Osvaldo Alonso" id="osvaldo-2-btn">Osvaldo Alonso<br>
+                    <input type="radio" name="center-mid-2" value="Brad Evans" id="brad-cm-2-btn">Brad Evans<br>    
+                    <input type="radio" name="center-mid-2" value="Blair Gavin" id="blair-2-btn">Blair Gavin<br>
+                    <input type="radio" name="center-mid-2" value="Shalrie Joseph" id="shalrie-2-btn">Shalrie Joseph<br>
+                    <input type="radio" name="center-mid-2" value="Andy Rose" id="andy-2-btn">Andy Rose<br>
+                    <input type="radio" name="center-mid-2" value="Clint Dempsey" id="clint-cm-2-btn">Clint Dempsey<br><br>
+                    <label>Left Midfielder<br></label>
+                    <input type="radio" name="left-mid" value="Alex Caskey" id="alex-btn">Alex Caskey<br>
+                    <input type="radio" name="left-mid" value="Brad Evans" id="brad-lm-btn">Brad Evans<br>
+                    <input type="radio" name="left-mid" value="Lamar Neagle" id="lamar-lm-btn">Lamar Neagle<br><br>
+                </td>
+                <td>
+                    <label>Forward 1<br></label>
+                    <input type="radio" name="forward-1" value="Will Bates" id="will-1-btn">Will Bates<br>
+                    <input type="radio" name="forward-1" value="Kenny Cooper" id="kenny-1-btn">Kenny Cooper<br>
+                    <input type="radio" name="forward-1" value="Clint Dempsey" id="clint-f-1-btn">Clint Dempsey<br>
+                    <input type="radio" name="forward-1" value="David Estrada" id="david-f-1-btn">David Estrada<br>
+                    <input type="radio" name="forward-1" value="Obafemi Martins" id="obafemi-1-btn">Obafemi Martins<br>
+                    <input type="radio" name="forward-1" value="Lamar Neagle" id="lamar-f-1-btn">Lamar Neagle<br>
+                    <input type="radio" name="forward-1" value="Eriq Zavaleta" id="eriq-1-btn">Eriq Zavaleta<br><br>
+                    <label>Forward 2<br></label>
+                    <input type="radio" name="forward-2" value="Will Bates" id="will-2-btn">Will Bates<br>
+                    <input type="radio" name="forward-2" value="Kenny Cooper" id="kenny-2-btn">Kenny Cooper<br>
+                    <input type="radio" name="forward-2" value="Clint Dempsey" id="clint-f-2-btn">Clint Dempsey<br>
+                    <input type="radio" name="forward-2" value="David Estrada" id="david-f-2-btn">David Estrada<br>
+                    <input type="radio" name="forward-2" value="Obafemi Martins" id="obafemi-2-btn">Obafemi Martins<br>
+                    <input type="radio" name="forward-2" value="Lamar Neagle" id="lamar-f-2-btn">Lamar Neagle<br>
+                    <input type="radio" name="forward-2" value="Eriq Zavaleta" id="eriq-2-btn">Eriq Zavaleta<br><br><br>
+                    <!-- <input type="submit" value="Submit"> -->
+                </td>
+            </table>
+        </form>
+    </div>
+    <img src="field.jpg" id="field">
+    <div class="goalie">
+        <img src="josh.jpg" id="josh" class="player">
+        <img src="stefan.jpg" id="stefan" class="player">
+        <img src="marcus.png" id="marcus" class="player">
+    </div>
+    <div class="right-back">
+        <img src="deandre.jpg" id="deandre" class="player"> 
+        <img src="zach.jpg" id="zach-rb" class="player">
+        <img src="dylan.jpg" id="dylan-rb" class="player">
+    </div>
+    <div class="center-back-1">
+        <img src="jhon.jpg" id="jhon-1" class="player">
+        <img src="patrick.jpg" id="patrick-1" class="player">
+        <img src="chad.jpg" id="chad-1" class="player">
+        <img src="zach.jpg" id="zach-cb-1" class="player">
+        <img src="djimi.jpg" id="djimi-1" class="player">
+    </div>
+     <div class="center-back-2">
+        <img src="jhon.jpg" id="jhon-2" class="player">
+        <img src="patrick.jpg" id="patrick-2" class="player">
+        <img src="chad.jpg" id="chad-2" class="player">
+        <img src="zach.jpg" id="zach-cb-2" class="player">
+        <img src="djimi.jpg" id="djimi-2" class="player">
+    </div>
+    <div class="left-back">
+        <img src="leo.jpg" id="leo" class="player">
+        <img src="dylan.jpg" id="dylan-lb" class="player">
+    </div>
+    <div class="right-midfield">
+        <img src="clint.jpg" id="clint-rm" class="player">
+        <img src="brad.jpg" id="brad-rm" class="player">
+        <img src="david.jpg" id="david-rm" class="player">
+        <img src="lamar.jpg" id="lamar-rm" class="player">
+    </div>
+    <div class="central-midfield-1">
+        <img src="osvaldo.jpg" id="osvaldo-1" class="player">
+        <img src="brad.jpg" id="brad-cm-1" class="player">
+        <img src="blair.jpg" id="blair-1" class="player">
+        <img src="shalrie.jpg" id="shalrie-1" class="player">
+        <img src="andy.jpg" id="andy-1" class="player">
+        <img src="clint.jpg" id="clint-cm-1" class="player">
+    </div>
+    <div class="central-midfield-2">
+        <img src="osvaldo.jpg" id="osvaldo-2" class="player">
+        <img src="brad.jpg" id="brad-cm-2" class="player">
+        <img src="blair.jpg" id="blair-2" class="player">
+        <img src="shalrie.jpg" id="shalrie-2" class="player">
+        <img src="andy.jpg" id="andy-2" class="player">
+        <img src="clint.jpg" id="clint-cm-2" class="player">
+    </div>
+    <div class="left-midfield">
+        <img src="alex.jpg" id="alex" class="player">
+        <img src="brad.jpg" id="brad-lm" class="player">
+        <img src="lamar.jpg" id="lamar-lm" class="player">
+    </div>
+    <div class="forward-1">
+        <img src="will.jpg" id="will-1" class="player">
+        <img src="kenny.jpg" id="kenny-1" class="player">
+        <img src="clint.jpg" id="clint-f-1" class="player">
+        <img src="david.jpg" id="david-f-1" class="player">
+        <img src="obafemi.jpg" id="obafemi-1" class="player">
+        <img src="lamar.jpg" id="lamar-f-1" class="player">
+        <img src="eriq.jpg" id="eriq-1" class="player">
+    </div>
+    <div class="forward-2">
+        <img src="will.jpg" id="will-2" class="player">
+        <img src="kenny.jpg" id="kenny-2" class="player">
+        <img src="clint.jpg" id="clint-f-2" class="player">
+        <img src="david.jpg" id="david-f-2" class="player">
+        <img src="obafemi.jpg" id="obafemi-2" class="player">
+        <img src="lamar.jpg" id="lamar-f-2" class="player">
+        <img src="eriq.jpg" id="eriq-2" class="player">
+    </div>
+    <script src="select.js"></script>
+    <script>
+        function postInfoToGoogle(){
+            var goalie = $("input[type='radio'][name='goalie']:checked").val();
+            var lb = $("input[type='radio'][name='left-back']:checked").val();
+            var cb1 = $("input[type='radio'][name='center-back-1']:checked").val();
+            var cb2 = $("input[type='radio'][name='center-back-2']:checked").val();
+            var rb = $("input[type='radio'][name='right-back']:checked").val();
+            var lm = $("input[type='radio'][name='left-mid']:checked").val();
+            var cm1 = $("input[type='radio'][name='center-mid-1']:checked").val();
+            var cm2 = $("input[type='radio'][name='center-mid-2']:checked").val();
+            var rm = $("input[type='radio'][name='right-mid']:checked").val();
+            var f1 = $("input[type='radio'][name='forward-1']:checked").val();
+            var f2 = $("input[type='radio'][name='forward-2']:checked").val();
+            if ((goalie !== "")) {
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/122HNk2xa5Qqy11AlTxV7_XcpIbRkcZJRc945YVeXYTU/formResponse",
+                    data: {"entry.2000528937" : goalie, "entry.143182080" : cb2, "entry.48985146": rb, "entry.542078047": rm, "entry.5436061": cm1, "entry.57216041": lm, "entry.614717010": f1, "entry.631371653": lb, "entry.1034973268": f2, "entry.2121426306": cm2, "entry.156122574": cb1 },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function (){                
+                            //Success message
+                        },
+                        200: function (){
+                            //Success Message
+                        }
+                    }
+                });
+            }
+            else {
+                //Error message
+            }
+        }
+        function success() {
+            var iframe = document.createElement('iframe');            
+            iframe.src = "http://docs.google.com/forms/d/122HNk2xa5Qqy11AlTxV7_XcpIbRkcZJRc945YVeXYTU/viewanalytics"
+            document.getElementById("player-sel").appendChild(iframe);
+            console.log('iframe.contentWindow =', iframe.contentWindow);         
+        }
+    </script>
+    
+    
+</body>
+</html>
