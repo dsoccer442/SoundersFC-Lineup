@@ -670,7 +670,7 @@ $(function () {
             $('#david-f-2-btn').prop('disabled', true);
         } else if ($('#david-f-2-btn').prop('checked') === true) {
             $('#david-f-1-btn').prop('disabled', true);
-            $('#david-f-2-btn').prop('disabled', true);
+            $('#david-rm-btn').prop('disabled', true);
         } else {
             $('#david-f-1-btn').prop('disabled', false);
             $('#david-f-2-btn').prop('disabled', false);
