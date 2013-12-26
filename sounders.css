@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
 
@@ -44,11 +44,11 @@ td {
 
 .center-back-1 > img {
     top: 400px;
-    left: 772px;
+    left: 782px;
 }
 .center-back-2 > img {
     top: 400px;
-    left: 932px;
+    left: 922px;
 }
 .left-back > img {
     top: 400px;
