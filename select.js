@@ -548,79 +548,62 @@ $(function () {
         // Dylan Remick
         if ($('#dylan-lb-btn').prop('checked') === true) {
             $('#dylan-rb-btn').prop('disabled', true);
-        } else {
-            $('#dylan-rb-btn').prop('disabled', false);
-        }
-        if ($('#dylan-rb-btn').prop('checked') === true) {
+        } else if ($('#dylan-rb-btn').prop('checked') === true) {
             $('#dylan-lb-btn').prop('disabled', true);
         } else {
             $('#dylan-lb-btn').prop('disabled', false);
+            $('#dylan-rb-btn').prop('disabled', false);
         }
-        // Jhon Hurtago
+        // Jhon Kennedy Hurtado
         if ($('#jhon-1-btn').prop('checked') === true) {
             $('#jhon-2-btn').prop('disabled', true);
-        } else {
-            $('#jhon-2-btn').prop('disabled', false);
-        }
-        if ($('#jhon-2-btn').prop('checked') === true) {
+        } else if ($('#jhon-2-btn').prop('checked') === true) {
             $('#jhon-1-btn').prop('disabled', true);
         } else {
             $('#jhon-1-btn').prop('disabled', false);
+            $('#jhon-2-btn').prop('disabled', false);
         }
         // Patrick Ianni
         if ($('#patrick-1-btn').prop('checked') === true) {
             $('#patrick-2-btn').prop('disabled', true);
-        } else {
-            $('#patrick-2-btn').prop('disabled', false);
-        }
-        if ($('#patrick-2-btn').prop('checked') === true) {
+        } else if ($('#patrick-2-btn').prop('checked') === true) {
             $('#patrick-1-btn').prop('disabled', true);
         } else {
             $('#patrick-1-btn').prop('disabled', false);
+            $('#patrick-2-btn').prop('disabled', false);
         }
         // Chad Marshall
         if ($('#chad-1-btn').prop('checked') === true) {
             $('#chad-2-btn').prop('disabled', true);
-        } else {
-            $('#chad-2-btn').prop('disabled', false);
-        }
-        if ($('#chad-2-btn').prop('checked') === true) {
+        } else if ($('#chad-2-btn').prop('checked') === true) {
             $('#chad-1-btn').prop('disabled', true);
         } else {
             $('#chad-1-btn').prop('disabled', false);
+            $('#chad-2-btn').prop('disabled', false);
         }
         // Zach Scott
         if ($('#zach-cb-1-btn').prop('checked') === true) {
             $('#zach-cb-2-btn').prop('disabled', true);
             $('#zach-rb-btn').prop('disabled', true);
-        } else {
-            $('#zach-cb-2-btn').prop('disabled', false);
-            $('#zach-rb-btn').prop('disabled', false);
-        }
-        if ($('#zach-cb-2-btn').prop('checked') === true) {
+        } else if ($('#zach-cb-2-btn').prop('checked') === true) {
             $('#zach-cb-1-btn').prop('disabled', true);
             $('#zach-rb-btn').prop('disabled', true);
-        } else { 
-            $('#zach-cb-1-btn').prop('disabled', false);
-            $('#zach-rb-btn').prop('disabled', false);
-        }
-        if ($('#zach-rb-btn').prop('checked') === true) {
+        } else if ($('#zach-rb-btn').prop('checked') === true) {
             $('#zach-cb-1-btn').prop('disabled', true);
             $('#zach-cb-2-btn').prop('disabled', true);
         } else {
-             $('#zach-cb-1-btn').prop('disabled', false);
+            $('#zach-cb-1-btn').prop('disabled', false);
             $('#zach-cb-2-btn').prop('disabled', false);
+            $('#zach-rb-btn').prop('disabled', false);
         }
         // Djimi Traore
         if ($('#djimi-1-btn').prop('checked') === true) {
             $('#djimi-2-btn').prop('disabled', true);
-        } else {
-            $('#djimi-2-btn').prop('disabled', false);
-        }
-        if ($('#djimi-2-btn').prop('checked') === true) {
+        } else if ($('#djimi-2-btn').prop('checked') === true) {
             $('#djimi-1-btn').prop('disabled', true);
         } else {
             $('#djimi-1-btn').prop('disabled', false);
+            $('#djimi-2-btn').prop('disabled', false);
         }
         // Clint Dempsey
         if ($('#clint-rm-btn').prop('checked') === true) {
@@ -628,46 +611,22 @@ $(function () {
             $('#clint-cm-2-btn').prop('disabled', true);
             $('#clint-f-1-btn').prop('disabled', true);
             $('#clint-f-2-btn').prop('disabled', true);
-        } else {
-             $('#clint-cm-1-btn').prop('disabled', false);
-            $('#clint-cm-2-btn').prop('disabled', false);
-            $('#clint-f-1-btn').prop('disabled', false);
-            $('#clint-f-2-btn').prop('disabled', false);
-        }
-        if ($('#clint-cm-1-btn').prop('checked') === true) {
+        } else if ($('#clint-cm-1-btn').prop('checked') === true) {
             $('#clint-rm-btn').prop('disabled', true);
             $('#clint-cm-2-btn').prop('disabled', true);
             $('#clint-f-1-btn').prop('disabled', true);
             $('#clint-f-2-btn').prop('disabled', true);
-        } else {
-             $('#clint-rm-btn').prop('disabled', false);
-            $('#clint-cm-2-btn').prop('disabled', false);
-            $('#clint-f-1-btn').prop('disabled', false);
-            $('#clint-f-2-btn').prop('disabled', false);
-        }
-        if ($('#clint-cm-2-btn').prop('checked') === true) {
+        } else if ($('#clint-cm-2-btn').prop('checked') === true) {
             $('#clint-cm-1-btn').prop('disabled', true);
             $('#clint-rm-btn').prop('disabled', true);
             $('#clint-f-1-btn').prop('disabled', true);
             $('#clint-f-2-btn').prop('disabled', true);
-        } else {
-            $('#clint-cm-1-btn').prop('disabled', false);
-            $('#clint-rm-btn').prop('disabled', false);
-            $('#clint-f-1-btn').prop('disabled', false);
-            $('#clint-f-2-btn').prop('disabled', false);
-        }
-        if ($('#clint-f-1-btn').prop('checked') === true) {
+        } else if ($('#clint-f-1-btn').prop('checked') === true) {
             $('#clint-cm-1-btn').prop('disabled', true);
             $('#clint-cm-2-btn').prop('disabled', true);
             $('#clint-rm-btn').prop('disabled', true);
             $('#clint-f-2-btn').prop('disabled', true);
-        } else {
-            $('#clint-cm-1-btn').prop('disabled', false);
-            $('#clint-cm-2-btn').prop('disabled', false);
-            $('#clint-rm-btn').prop('disabled', false);
-            $('#clint-f-2-btn').prop('disabled', false);
-        }
-        if ($('#clint-f-2-btn').prop('checked') === true) {
+        } else if ($('#clint-f-2-btn').prop('checked') === true) {
             $('#clint-cm-1-btn').prop('disabled', true);
             $('#clint-cm-2-btn').prop('disabled', true);
             $('#clint-f-1-btn').prop('disabled', true);
@@ -676,6 +635,7 @@ $(function () {
             $('#clint-cm-1-btn').prop('disabled', false);
             $('#clint-cm-2-btn').prop('disabled', false);
             $('#clint-f-1-btn').prop('disabled', false);
+            $('#clint-f-2-btn').prop('disabled', false);
             $('#clint-rm-btn').prop('disabled', false);
         }
         // Brad Evans
@@ -683,30 +643,15 @@ $(function () {
             $('#brad-cm-1-btn').prop('disabled', true);
             $('#brad-cm-2-btn').prop('disabled', true);
             $('#brad-lm-btn').prop('disabled', true);
-        } else {
-            $('#brad-cm-1-btn').prop('disabled', false);
-            $('#brad-cm-2-btn').prop('disabled', false);
-            $('#brad-lm-btn').prop('disabled', false);
-        }
-        if ($('#brad-cm-1-btn').prop('checked') === true) {
+        } else if ($('#brad-cm-1-btn').prop('checked') === true) {
             $('#brad-rm-btn').prop('disabled', true);
             $('#brad-cm-2-btn').prop('disabled', true);
             $('#brad-lm-btn').prop('disabled', true);
-        } else {
-            $('#brad-rm-btn').prop('disabled', false);
-            $('#brad-cm-2-btn').prop('disabled', false);
-            $('#brad-lm-btn').prop('disabled', false);
-        }
-        if ($('#brad-cm-2-btn').prop('checked') === true) {
+        } else if ($('#brad-cm-2-btn').prop('checked') === true) {
             $('#brad-cm-1-btn').prop('disabled', true);
             $('#brad-rm-btn').prop('disabled', true);
             $('#brad-lm-btn').prop('disabled', true);
-        } else {
-            $('#brad-cm-1-btn').prop('disabled', false);
-            $('#brad-rm-btn').prop('disabled', false);
-            $('#brad-lm-btn').prop('disabled', false);
-        }
-        if ($('#brad-lm-btn').prop('checked') === true) {
+        } else if ($('#brad-lm-btn').prop('checked') === true) {
             $('#brad-cm-1-btn').prop('disabled', true);
             $('#brad-cm-2-btn').prop('disabled', true);
             $('#brad-rm-btn').prop('disabled', true);
@@ -714,27 +659,21 @@ $(function () {
             $('#brad-cm-1-btn').prop('disabled', false);
             $('#brad-cm-2-btn').prop('disabled', false);
             $('#brad-rm-btn').prop('disabled', false);
+            $('#brad-lm-btn').prop('disabled', false);
         }
         // David Estrada
         if ($('#david-rm-btn').prop('checked') === true) {
             $('#david-f-1-btn').prop('disabled', true);
             $('#david-f-2-btn').prop('disabled', true);
-        } else {
-            $('#david-f-1-btn').prop('disabled', false);
-            $('#david-f-2-btn').prop('disabled', false);
-        }
-         if ($('#david-f-1-btn').prop('checked') === true) {
+        } else if ($('#david-f-1-btn').prop('checked') === true) {
             $('#david-rm-btn').prop('disabled', true);
             $('#david-f-2-btn').prop('disabled', true);
-        } else {
-            $('#david-rm-btn').prop('disabled', false);
-            $('#david-f-2-btn').prop('disabled', false);
-        }
-         if ($('#david-f-2-btn').prop('checked') === true) {
+        } else if ($('#david-f-2-btn').prop('checked') === true) {
             $('#david-f-1-btn').prop('disabled', true);
             $('#david-f-2-btn').prop('disabled', true);
         } else {
             $('#david-f-1-btn').prop('disabled', false);
+            $('#david-f-2-btn').prop('disabled', false);
             $('#david-rm-btn').prop('disabled', false);
         }
         // Lamar Neagle
@@ -742,123 +681,95 @@ $(function () {
             $('#lamar-f-1-btn').prop('disabled', true);
             $('#lamar-f-2-btn').prop('disabled', true);
             $('#lamar-lm-btn').prop('disabled', true);
-        } else {
-            $('#lamar-f-1-btn').prop('disabled', false);
-            $('#lamar-f-2-btn').prop('disabled', false);
-            $('#lamar-lm-btn').prop('disabled', false);
-        }
-        if ($('#lamar-lm-btn').prop('checked') === true) {
+        } else if ($('#lamar-lm-btn').prop('checked') === true) {
             $('#lamar-f-1-btn').prop('disabled', true);
             $('#lamar-f-2-btn').prop('disabled', true);
             $('#lamar-rm-btn').prop('disabled', true);
-        } else {
-            $('#lamar-f-1-btn').prop('disabled', false);
-            $('#lamar-rm-btn').prop('disabled', false);
-            $('#lamar-rm-btn').prop('disabled', false);
-        }
-        if ($('#lamar-f-1-btn').prop('checked') === true) {
+        } else if ($('#lamar-f-1-btn').prop('checked') === true) {
             $('#lamar-rm-btn').prop('disabled', true);
             $('#lamar-f-2-btn').prop('disabled', true);
             $('#lamar-lm-btn').prop('disabled', true);
-        } else {
-            $('#lamar-rm-btn').prop('disabled', false);
-            $('#lamar-f-2-btn').prop('disabled', false);
-            $('#lamar-lm-btn').prop('disabled', false);
-        }
-        if ($('#lamar-f-2-btn').prop('checked') === true) {
+        } else if ($('#lamar-f-2-btn').prop('checked') === true) {
             $('#lamar-f-1-btn').prop('disabled', true);
             $('#lamar-rm-btn').prop('disabled', true);
             $('#lamar-lm-btn').prop('disabled', true);
         } else {
             $('#lamar-f-1-btn').prop('disabled', false);
+            $('#lamar-f-2-btn').prop('disabled', false);
             $('#lamar-rm-btn').prop('disabled', false);
             $('#lamar-lm-btn').prop('disabled', false);
         }
         // Osvaldo Alonso
         if ($('#osvaldo-1-btn').prop('checked') === true) {
             $('#osvaldo-2-btn').prop('disabled', true);
-        } else {
-            $('#osvaldo-2-btn').prop('disabled', false);
-        }
-        if ($('#osvaldo-2-btn').prop('checked') === true) {
+        } else if ($('#osvaldo-2-btn').prop('checked') === true) {
             $('#osvaldo-1-btn').prop('disabled', true);
         } else {
             $('#osvaldo-1-btn').prop('disabled', false);
+            $('#osvaldo-2-btn').prop('disabled', false);
         }
         // Blair Gavin
         if ($('#blair-1-btn').prop('checked') === true) {
             $('#blair-2-btn').prop('disabled', true);
-        } else {
-            $('#blair-2-btn').prop('disabled', false);
-        }
-        if ($('#blair-2-btn').prop('checked') === true) {
+        } else if ($('#blair-2-btn').prop('checked') === true) {
             $('#blair-1-btn').prop('disabled', true);
         } else {
             $('#blair-1-btn').prop('disabled', false);
+            $('#blair-2-btn').prop('disabled', false);
         }
         // Shalrie Joseph
         if ($('#shalrie-1-btn').prop('checked') === true) {
             $('#shalrie-2-btn').prop('disabled', true);
-        } else {
-            $('#shalrie-2-btn').prop('disabled', false);
-        }
-        if ($('#shalrie-2-btn').prop('checked') === true) {
+        } else if ($('#shalrie-2-btn').prop('checked') === true) {
             $('#shalrie-1-btn').prop('disabled', true);
         } else {
             $('#shalrie-1-btn').prop('disabled', false);
+            $('#shalrie-2-btn').prop('disabled', false);
         }
         // Andy Rose
         if ($('#andy-1-btn').prop('checked') === true) {
             $('#andy-2-btn').prop('disabled', true);
-        } else {
-            $('#andy-2-btn').prop('disabled', false);
-        }
-        if ($('#andy-2-btn').prop('checked') === true) {
+        } else if ($('#andy-2-btn').prop('checked') === true) {
             $('#andy-1-btn').prop('disabled', true);
         } else {
             $('#andy-1-btn').prop('disabled', false);
+            $('#andy-2-btn').prop('disabled', false);
         }
         // Will Bates
         if ($('#will-1-btn').prop('checked') === true) {
             $('#will-2-btn').prop('disabled', true);
-        } else {
-            $('#will-2-btn').prop('disabled', false);
-        }
-        if ($('#will-2-btn').prop('checked') === true) {
+        } else if ($('#will-2-btn').prop('checked') === true) {
             $('#will-1-btn').prop('disabled', true);
         } else {
             $('#will-1-btn').prop('disabled', false);
+            $('#will-2-btn').prop('disabled', false);
         }
         // Kenny Cooper
         if ($('#kenny-1-btn').prop('checked') === true) {
             $('#kenny-2-btn').prop('disabled', true);
-        } else {
-            $('#kenny-2-btn').prop('disabled', false);
-        }
-        if ($('#kenny-2-btn').prop('checked') === true) {
+        } else if ($('#kenny-2-btn').prop('checked') === true) {
             $('#kenny-1-btn').prop('disabled', true);
         } else {
             $('#kenny-1-btn').prop('disabled', false);
+            $('#kenny-2-btn').prop('disabled', false);
         }
         // Obafemi Martins
         if ($('#obafemi-1-btn').prop('checked') === true) {
             $('#obafemi-2-btn').prop('disabled', true);
-        } else {
-            $('#obafemi-2-btn').prop('disabled', false);
-        }
-        if ($('#obafemi-2-btn').prop('checked') === true) {
+        } else if ($('#obafemi-2-btn').prop('checked') === true) {
             $('#obafemi-1-btn').prop('disabled', true);
         } else {
             $('#obafemi-1-btn').prop('disabled', false);
+            $('#obafemi-2-btn').prop('disabled', false);
         }
         // Eriq Zavaletta
         if ($('#eriq-1-btn').prop('checked') === true) {
             $('#eriq-2-btn').prop('disabled', true);
-        }
-        if ($('#eriq-2-btn').prop('checked') === true) {
+        } else if ($('#eriq-2-btn').prop('checked') === true) {
             $('#eriq-1-btn').prop('disabled', true);
+        } else {
+            $('#eriq-1-btn').prop('disabled', false);
+            $('#eriq-2-btn').prop('disabled', false);
         }
     });
-});
-
-            
+});        

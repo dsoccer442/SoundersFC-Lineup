@@ -38,11 +38,10 @@
                     <input type="radio" name="right-back" value="Dylan Remick" id="dylan-rb-btn">Dylan Remick<br><br>
                 </td>
                 <td>
-                    <label>Right Midfielder<br></label>
-                    <input type="radio" name="right-mid" value="Clint Dempsey" id="clint-rm-btn">Clint Dempsey<br>
-                    <input type="radio" name="right-mid" value="Brad Evans" id="brad-rm-btn">Brad Evans<br>
-                    <input type="radio" name="right-mid" value="David Estrada" id="david-rm-btn">David Estrada<br>
-                    <input type="radio" name="right-mid" value="Lamar Neagle" id="lamar-rm-btn">Lamar Neagle<br><br>
+                    <label>Left Midfielder<br></label>
+                    <input type="radio" name="left-mid" value="Alex Caskey" id="alex-btn">Alex Caskey<br>
+                    <input type="radio" name="left-mid" value="Brad Evans" id="brad-lm-btn">Brad Evans<br>
+                    <input type="radio" name="left-mid" value="Lamar Neagle" id="lamar-lm-btn">Lamar Neagle<br><br>
                     <label>Center Midfielder 1<br></label>
                     <input type="radio" name="center-mid-1" value="Osvaldo Alonso" id="osvaldo-1-btn">Osvaldo Alonso<br>
                     <input type="radio" name="center-mid-1" value="Brad Evans" id="brad-cm-1-btn">Brad Evans<br>    
@@ -57,10 +56,11 @@
                     <input type="radio" name="center-mid-2" value="Shalrie Joseph" id="shalrie-2-btn">Shalrie Joseph<br>
                     <input type="radio" name="center-mid-2" value="Andy Rose" id="andy-2-btn">Andy Rose<br>
                     <input type="radio" name="center-mid-2" value="Clint Dempsey" id="clint-cm-2-btn">Clint Dempsey<br><br>
-                    <label>Left Midfielder<br></label>
-                    <input type="radio" name="left-mid" value="Alex Caskey" id="alex-btn">Alex Caskey<br>
-                    <input type="radio" name="left-mid" value="Brad Evans" id="brad-lm-btn">Brad Evans<br>
-                    <input type="radio" name="left-mid" value="Lamar Neagle" id="lamar-lm-btn">Lamar Neagle<br><br>
+                    <label>Right Midfielder<br></label>
+                    <input type="radio" name="right-mid" value="Clint Dempsey" id="clint-rm-btn">Clint Dempsey<br>
+                    <input type="radio" name="right-mid" value="Brad Evans" id="brad-rm-btn">Brad Evans<br>
+                    <input type="radio" name="right-mid" value="David Estrada" id="david-rm-btn">David Estrada<br>
+                    <input type="radio" name="right-mid" value="Lamar Neagle" id="lamar-rm-btn">Lamar Neagle<br><br>
                 </td>
                 <td>
                     <label>Forward 1<br></label>
@@ -79,7 +79,7 @@
                     <input type="radio" name="forward-2" value="Obafemi Martins" id="obafemi-2-btn">Obafemi Martins<br>
                     <input type="radio" name="forward-2" value="Lamar Neagle" id="lamar-f-2-btn">Lamar Neagle<br>
                     <input type="radio" name="forward-2" value="Eriq Zavaleta" id="eriq-2-btn">Eriq Zavaleta<br><br><br>
-                    <!-- <input type="submit" value="Submit"> -->
+                     <input type="submit" value="Submit and See Results"> 
                 </td>
             </table>
         </form>
@@ -183,7 +183,7 @@
                             //Success message
                         },
                         200: function (){
-                            //Success Message
+                            
                         }
                     }
                 });
@@ -193,10 +193,9 @@
             }
         }
         function success() {
-            var iframe = document.createElement('iframe');            
-            iframe.src = "http://docs.google.com/forms/d/122HNk2xa5Qqy11AlTxV7_XcpIbRkcZJRc945YVeXYTU/viewanalytics"
-            document.getElementById("player-sel").appendChild(iframe);
-            console.log('iframe.contentWindow =', iframe.contentWindow);         
+            var url = "https://docs.google.com/forms/d/122HNk2xa5Qqy11AlTxV7_XcpIbRkcZJRc945YVeXYTU/viewanalytics"
+            var win = window.open(url, '_blank');
+            win.focus();
         }
     </script>
     
